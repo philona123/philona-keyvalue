@@ -37,3 +37,9 @@ function debounce(func, timeout = 300){
     console.log('Saving data');
   }
   const processChange = debounce(() => saveInput());
+
+
+  function changebut()
+  {
+    document.getElementById("act").style.backgroundColor = "grey";
+  }
