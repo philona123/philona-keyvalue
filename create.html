@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="create.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Employee</title>
+</head>
+
+<body topmargin="0%" leftmargin="0%">
+    <aside>
+        <header>
+            <img src="assets/kv logo.png" alt="Keyvalue Logo" style="padding: 13px;">
+        </header>
+        <div class="listing">
+            <p id="list">
+                <img id="imgl" src="assets/List.png" alt="List img">&nbsp;Employee List
+            </p>
+        </div>
+    </aside>
+    <main>
+        <div class="head"></div>
+        <h1>Create Employee</h1>
+
+        <form class="flex-container">
+            <div style="padding-left: 20px;">
+                <div class="input-group">
+                    <label for="ename">Employee Name</label><br>
+                    <input type="text" id="ename" name="ename" size="40"><br>
+                </div>
+
+                <div class="input-group">
+                    <label for="eid">Employee ID</label><br>
+                    <input type="text" id="eid" name="eid"><br>
+                </div>
+
+                <div class="input-group">
+                    <label for="jdate">Joining Date</label><br>
+                    <input type="text" id="jdate" name="jdate"><br>
+                </div>
+
+
+                <div class="form-footer">
+                    <button class="btn1" type="submit">Create</button>
+                    <button class="btn2" type="button">Cancel</button>
+                </div>
+            </div>
+
+            <div style="padding-left: 80px;">
+                <div class="input-group">
+                    <label for="erole">Role</label><br>
+                    <input type="text" id="erole" name="erole" size="50"><br>
+                </div>
+
+                <div class="input-group">
+                    <label for="status">Status</label><br>
+                    <select id="status" name="status">
+                        <option value="active">Active</option>
+                        <option value="inactive">Inactive</option>
+                    </select><br />
+                </div>
+
+                <div class="input-group">
+                    <label for="exp">Experience</label><br>
+                    <input type="text" id="exp" name="exp"><br>
+                </div>
+            </div>
+
+            <div style="padding-left: 80px;">
+                <div class="input-group">
+                    <label for="address">Address</label><br>
+                    <input type="text" id="address" name="address" size="50"><br>
+                </div>
+
+                <div class="input-group">
+                    <label for="idp">Upload ID proof</label><br>
+                    <input type="text" id="idp" name="idp"><br>
+                </div>
+            </div>
+            
+          
+
+        </form>
+
+    </main>
+</body>
+
+</html>
