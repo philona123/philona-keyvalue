@@ -139,8 +139,9 @@ form-footer {
 
 .head {
   width: 100%;
-  box-shadow: 3px 4px 3px 0px rgb(0 0 0 / 38%);
+  box-shadow: 3px 4px 3px 0px rgba(92, 89, 89, 0.38);
   height: 57px;
   margin-top: -19px;
   margin-left: -18px;
 }
+

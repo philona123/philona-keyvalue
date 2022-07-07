@@ -9,7 +9,7 @@
     <title>Create Employee</title>
 </head>
 
-<body topmargin="0%" leftmargin="0%">
+<body topmargin="0%" leftmargin="0%" onload='document.form1.text1.focus()'>
     <aside>
         <header>
             <img src="assets/kv logo.png" alt="Keyvalue Logo" style="padding: 13px;">
@@ -24,7 +24,7 @@
         <div class="head"></div>
         <h1>Create Employee</h1>
 
-        <form class="flex-container">
+        <form id="forms" class="flex-container" name="form1" action="#">
             <div style="padding-left: 20px;">
                 <div class="input-group">
                     <label for="ename">Employee Name</label><br>
@@ -32,13 +32,14 @@
                 </div>
 
                 <div class="input-group">
-                    <label for="eid">Employee ID</label><br>
-                    <input type="text" id="eid" name="eid"><br>
+                    <label for="erole">Role</label><br>
+                    <input type="text" id="erole" name="erole" size="50"><br>
                 </div>
 
                 <div class="input-group">
-                    <label for="jdate">Joining Date</label><br>
-                    <input type="text" id="jdate" name="jdate"><br>
+                    <label for="address">Address</label><br>
+                    <input type="text" id="address" name="address" size="50"><br>
+                    
                 </div>
 
 
@@ -50,41 +51,50 @@
 
             <div style="padding-left: 80px;">
                 <div class="input-group">
-                    <label for="erole">Role</label><br>
-                    <input type="text" id="erole" name="erole" size="50"><br>
+                    <label for="eid">Employee ID</label><br>
+                    <input type="text" id="eid" name="eid" size="50"><br>
                 </div>
 
                 <div class="input-group">
                     <label for="status">Status</label><br>
-                    <select id="status" name="status">
+                    <select id="status" name="status" style="background-color: #fff;">
                         <option value="active">Active</option>
                         <option value="inactive">Inactive</option>
                     </select><br />
                 </div>
 
                 <div class="input-group">
-                    <label for="exp">Experience</label><br>
-                    <input type="text" id="exp" name="exp"><br>
+                    <label for="idfile">Upload ID Proof</label><br>
+                    <input type="file" id="idfile" name="idfile"><br>
+                   
                 </div>
             </div>
 
-            <div style="padding-left: 80px;">
+            <div style="padding-left: 80px; margin-right: 20px;">
                 <div class="input-group">
-                    <label for="address">Address</label><br>
-                    <input type="text" id="address" name="address" size="50"><br>
+                    <label for="jdate">Joining Date</label><br>
+                    <input type="text" id="jdate" name="jdate" size="50" ><br>
                 </div>
 
                 <div class="input-group">
-                    <label for="idp">Upload ID proof</label><br>
-                    <input type="text" id="idp" name="idp"><br>
+                    <label for="exp">Experience</label><br>
+                    <input type="text" id="exp" name="exp"><br>
+                </div>
+
+                <div>
+                    <label for="email">Email</label><br>
+                    <input type='text' name='text1'/>
+                    <!-- <input type="submit" name="submit" value="Submit" onclick="ValidateEmail(document.form1.text1)"/> -->
                 </div>
             </div>
             
           
 
         </form>
+        <pre id='output'></pre>
 
     </main>
+    <script src="script.js"></script>
 </body>
 
 </html>
