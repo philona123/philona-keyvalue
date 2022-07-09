@@ -33,7 +33,13 @@
 
                 <div class="input-group">
                     <label for="erole">Role</label><br>
-                    <input type="text" id="erole" name="erole" size="50" style="background-color: #f5f5f5;" placeholder="Choose Role"><br>
+                    <!-- <input type="text" id="erole" name="erole" size="50" style="background-color: #f5f5f5;" placeholder="Choose Role"><br> -->
+                    <select id="rols">
+                        <option value="none" selected disabled hidden>Choose role</option>
+                        <option value="active">Admin</option>
+                        <option value="active">Manager</option>
+                        <option value="active">Engineer</option>
+                    </select>
                 </div>
 
                 <div class="input-group">
@@ -45,7 +51,7 @@
 
                 <div class="form-footer">
                     <button id="act" class="btn1" type="submit" onclick="changebut()">Create</button>
-                    <button class="btn2" type="button" onclick="processChange()">Cancel</button>
+                    <button class="btn2" type="button" onclick="processChange()" style="border: 2px solid #9d9f9d">Cancel</button>
                 </div>
             </div>
 
@@ -58,19 +64,20 @@
                 <div class="input-group">
                     <label for="status">Status</label><br>
                     <select id="status" name="status" style="background-color: #f5f5f5;" placeholder="Status">
+                        <option value="none" selected disabled hidden>Status</option>
                         <option value="active">Active</option>
                         <option value="inactive">Inactive</option>
                     </select><br />
                 </div>
 
-                <div class="input-group">
-                    <label for="idfile">Upload ID Proof</label><br>
+                <div class="input-group" style="margin-top: -12px;">
+                    <label for="idfile" style="padding-top: 11px; font-size: 15px;"> Upload ID Proof</label><br>
                     <input type="file" id="idfile" name="idfile" style="display: none;"><br>
                     <div class="custom-file">
-                    <label>
+                    <label id="fil">
                             Choose file
                     </label>        
-                    <label class="file-btn" for="idfile">
+                    <label class="file-btn" for="idfile" style="padding-top: 1px;">
                         Browse
                     </label>
                     </div>
@@ -90,8 +97,8 @@
                 </div>
 
                 <div>
-                    <label for="email">Email</label><br>
-                    <input type='text' name='text1' style="background-color: #f5f5f5;"/>
+                    <label for="email" style="font-family: sans-serif;">Email</label><br>
+                    <input type='text' name='text1' style="background-color: #f5f5f5;" placeholder="Email"/>
                     <input type="submit" name="submit" value="validate" onclick="ValidateEmail(document.form1.text1)" />
                 </div>
             </div>
