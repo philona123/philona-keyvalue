@@ -50,8 +50,8 @@ const debounce = (func, delay) => {
   }
 }
 button.addEventListener('click', debounce(function () {
-  alert("This is executing after evrey 5 seconds");
-}, 5000));
+  alert("This is executing after every 2 seconds");
+}, 2000));
 
 
 function changebut() {
